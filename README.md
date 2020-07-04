@@ -16,7 +16,7 @@
 <br>
 <h2>Via linha de comando - CLI</h2><br>
 <code>
-cd manicomio_bot_heroku
+cd manicomio_bot_heroku<br>
 heroku login
 heroku create --region us manicomio       #seta us como regiao e nome_do_app defina o nome do  app no heroku
 heroku buildpacks:set heroku/python       #seta o python
