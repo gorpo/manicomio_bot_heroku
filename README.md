@@ -6,7 +6,7 @@
 [![Build](https://img.shields.io/badge/arquiterura-64bits-blue.svg)]()
 <h2 align="center">Manicomio Telegram Heroku Bot</h2>
 
-## Instruções:<br>
+<h2>Instruções:</h2><br>
 1. Edite no arquivo config se quer rodar o bot local ou no heroku, comente e descomente as linhas.<br>
 2. Edite requeriments.txt caso tenha adicionado novas libs.<br>
 3. Especifique a versão do python no arquivo runtime, confira as versões de python disponiveis no heroku https://devcenter.heroku.com/articles/python-runtimes<br>
@@ -14,8 +14,8 @@
 5. insira este bot em um canal e pegue o id do canal, ele servirá para os logs.<br>
 6. pegue sua id ela servirá para você ser adm master.<br>
 <br>
-### Via linha de comando - CLI<br>
-```
+<h2>Via linha de comando - CLI</h2><br>
+<code>
 cd manicomio_bot_heroku
 heroku login
 heroku create --region us manicomio       #seta us como regiao e nome_do_app defina o nome do  app no heroku
@@ -28,17 +28,17 @@ heroku config:set SUDOERS=522510051      #seta o sudo ou seja adm master do bot
 
 heroku ps:scale bot=1 # start bot dyno - inicia seu bot
 heroku logs --tail # Ativa os logs no terminal ou cmd
-heroku ps:stop bot #para o bot dyno  - para seu bot
-```
+heroku ps:stop bot #para o bot dyno  - para seu bot</code>
+
 <br><br>
-### links uteis<br>
+<h2>links uteis</h2><br>
 - https://devcenter.heroku.com/articles/dynos<br>
 - https://devcenter.heroku.com/articles/config-vars<br>
 - https://devcenter.heroku.com/articles/heroku-redis<br>
 - https://devcenter.heroku.com/articles/error-codes<br>
 
 <br>
-## Deploying via Heroku Dashboard<br>
+<h2>Deploying via Heroku Dashboard</h2><br>
 https://dashboard.heroku.com<br>
 1. Fork este repositorio.<br>
 3. Vá para https://dashboard.heroku.com, faça login, Pressione _Novo_ e escolha _Criar novo aplicativo._<br>
