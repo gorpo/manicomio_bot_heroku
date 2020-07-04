@@ -15,20 +15,17 @@
 6. pegue sua id ela servirá para você ser adm master.<br>
 <br>
 <h2>Via linha de comando - CLI</h2><br>
-<code>
-cd manicomio_bot_heroku<br>
-heroku login
-heroku create --region us manicomio       #seta us como regiao e nome_do_app defina o nome do  app no heroku
-heroku buildpacks:set heroku/python       #seta o python
-git push heroku master                    #deploy do programa no heroku
-
-heroku config:set TELEGRAM_TOKEN=1186597860:AAHZTQT--xYhNHhkO8SbxlSxrdwVnkvi38s #seta as config vars, insira seu token
-heroku config:set LOGS=-1001215401730    #seta a id do canal de logs que o bot ja deve estar e ter admin
-heroku config:set SUDOERS=522510051      #seta o sudo ou seja adm master do bot
-
-heroku ps:scale bot=1 # start bot dyno - inicia seu bot
-heroku logs --tail # Ativa os logs no terminal ou cmd
-heroku ps:stop bot #para o bot dyno  - para seu bot</code>
+<code>cd manicomio_bot_heroku</code><br>
+<code>heroku login</code><br>
+<code>heroku create --region us manicomio</code> seta us como regiao e nome_do_app defina o nome do  app no heroku<br>
+<code>heroku buildpacks:set heroku/python</code> seta o python<br>
+<code>git push heroku master</code>              deploy do programa no heroku<br>
+<code>heroku config:set TELEGRAM_TOKEN=1186597860:AAHZTQT--xYhNHhkO8SbxlSxrdwVnkvi38s</code> seta as config vars, insira seu token<br>
+<code>heroku config:set LOGS=-1001215401730</code> seta a id do canal de logs que o bot ja deve estar e ter admin<br>
+<code>heroku config:set SUDOERS=522510051</code> seta o sudo ou seja adm master do bot<br>
+<code>heroku ps:scale bot=1</code> start bot dyno - inicia seu bot<br>
+<code>heroku logs --tail</code> tiva os logs no terminal ou cmd<br>
+<code>heroku ps:stop bot</code> para o bot dyno  - para seu bot
 
 <br><br>
 <h2>links uteis</h2><br>
