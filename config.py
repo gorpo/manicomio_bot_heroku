@@ -5,9 +5,9 @@ import os
 
 
 #LOCAL CONFIG rodar em local host use as linhas abaixo--->
-#token = "1186597860:AAHZTQT--xYhNHhkO8SbxlSxrdwVnkvi38s"
-#logs = -1001215401730
-#sudoers = [522510051]
+#token = "token do bot pegar no botfather"
+#logs = -100xxxxxxxx   #crie um canal e insira a id do canal ao lado
+#sudoers = [123345]  #sua id para poder ser adm master,mais ids devem ser separadas por virgulas [123123,543452,234234]  
 
 #HEROKU CONFIG - rodar no heroku use as linhas abaixo------->
 token = os.environ['TELEGRAM_TOKEN']
