@@ -18,7 +18,12 @@
 <code>cd manicomio_bot_heroku</code><br>
 <code>heroku login</code><br>
 <code>heroku create --region us manicomio</code> seta us como regiao e nome_do_app defina o nome do  app no heroku<br>
-<code>heroku buildpacks:set heroku/python</code> seta o python<br>
+<code>git init</code><br>
+<code>git add *</code><br>
+<code>git commit -m "Primeiro commit!"</code><br>
+<code>heroku git:remote -a manicomio</code><br>
+
+
 <code>git push heroku master</code>              deploy do programa no heroku<br>
 <code>heroku config:set TELEGRAM_TOKEN=1186597860:AAHZTQT--xYhNHhkO8SbxlSxrdwVnkvi38s</code> seta as config vars, insira seu token<br>
 <code>heroku config:set LOGS=-1001215401730</code> seta a id do canal de logs que o bot ja deve estar e ter admin<br>
