@@ -5,15 +5,16 @@
 [![Build](https://img.shields.io/badge/Linux-Ubuntu%20Debian-orange.svg)]()
 [![Build](https://img.shields.io/badge/arquiterura-64bits-blue.svg)]()
 <h2 align="center">Manicomio Telegram Heroku Bot</h2>
-## Instruções:
-1. Edite no arquivo config se quer rodar o bot local ou no heroku, comente e descomente as linhas.
-2. Edite requeriments.txt caso tenha adicionado novas libs.
-3. Especifique a versão do python no arquivo runtime, confira as versões de python disponiveis no heroku [aqui](https://devcenter.heroku.com/articles/python-runtimes)
-4. Crie um bot no Botfather e pegue o token do bot.
-5. insira este bot em um canal e pegue o id do canal, ele servirá para os logs.
-6. pegue sua id ela servirá para você ser adm master.
 
-### Via linha de comando - CLI
+## Instruções:<br>
+1. Edite no arquivo config se quer rodar o bot local ou no heroku, comente e descomente as linhas.<br>
+2. Edite requeriments.txt caso tenha adicionado novas libs.<br>
+3. Especifique a versão do python no arquivo runtime, confira as versões de python disponiveis no heroku https://devcenter.heroku.com/articles/python-runtimes<br>
+4. Crie um bot no Botfather e pegue o token do bot.<br>
+5. insira este bot em um canal e pegue o id do canal, ele servirá para os logs.<br>
+6. pegue sua id ela servirá para você ser adm master.<br>
+<br>
+### Via linha de comando - CLI<br>
 ```
 cd manicomio_bot_heroku
 heroku login
@@ -29,27 +30,28 @@ heroku ps:scale bot=1 # start bot dyno - inicia seu bot
 heroku logs --tail # Ativa os logs no terminal ou cmd
 heroku ps:stop bot #para o bot dyno  - para seu bot
 ```
+<br><br>
+### links uteis<br>
+- https://devcenter.heroku.com/articles/dynos<br>
+- https://devcenter.heroku.com/articles/config-vars<br>
+- https://devcenter.heroku.com/articles/heroku-redis<br>
+- https://devcenter.heroku.com/articles/error-codes<br>
 
-### links uteis
-- https://devcenter.heroku.com/articles/dynos
-- https://devcenter.heroku.com/articles/config-vars
-- https://devcenter.heroku.com/articles/heroku-redis
-- https://devcenter.heroku.com/articles/error-codes
-
-
-
-## Deploying via [Heroku Dashboard](https://dashboard.heroku.com) (GUI)
-1. [Fork](https://github.com/gorpo/manicomio_bot_heroku/fork) este repositorio.
-3. Vá para [Painel] (https://dashboard.heroku.com), faça login, Pressione _Novo_ e escolha _Criar novo aplicativo._
-4. Preencha um _App Name_ e escolha _Runtime Region._
-5. Conecte seu repositório GitHub na página _Deploy_.
-6. Configuração ** Automatics deploys ** _ (Opcionalmente) ._
-7. _Implante uma filial do GitHub._
-8. Em seguida, vá para uma página _Settings_, clique em _Reveal Config Vars_ e adicione seus próprios, por exemplo:
-! [Config Vars] (http://i.imgur.com/C3cmphh.png)
-9. ** Finalmente **, vá para a página _Resources_.
-    1. Instale o _Heroku Redis_ add-on _ (Opcionalmente) _
-    2. Pressione um botão pequeno da caneta, mova o controle deslizante e clique em _Confirmar_, que iniciará o bot dyno.
-    3. Simplesmente mova o controle deslizante para trás se precisar parar o bot dyno, lembre-se de clicar em _Confirmar_.
-    4. Se, por algum motivo, não estiver funcionando, verifique os logs aqui
-    ! [Logs] (http://i.imgur.com/rIHU6zF.png)
+<br>
+## Deploying via Heroku Dashboard<br>
+https://dashboard.heroku.com<br>
+1. Fork este repositorio.<br>
+3. Vá para https://dashboard.heroku.com, faça login, Pressione _Novo_ e escolha _Criar novo aplicativo._<br>
+4. Preencha um _App Name_ e escolha _Runtime Region._<br>
+5. Conecte seu repositório GitHub na página _Deploy_.<br>
+6. Configuração ** Automatics deploys ** _ (Opcionalmente) ._<br>
+7. _Implante uma filial do GitHub._<br>
+8. Em seguida, vá para uma página _Settings_, clique em _Reveal Config Vars_ e adicione seus próprios, por exemplo:<br>
+    8.1 TELEGRAM_TOKEN=118232260:AAHZTQT--xYhNHhkOsdfbxlSxrdwVnkvi38s <br>
+    8.2 LOGS=-10012154123123 #id do canal do bot<br>
+    8.3 SUDOERS=234234234234 #sua id<br>
+9. ** Finalmente **, vá para a página _Resources_.<br>
+    1. Instale o _Heroku Redis_ add-on _ (Opcionalmente) _<br>
+    2. Pressione um botão pequeno da caneta, mova o controle deslizante e clique em _Confirmar_, que iniciará o bot dyno.<br>
+    3. Simplesmente mova o controle deslizante para trás se precisar parar o bot dyno, lembre-se de clicar em _Confirmar_.<br>
+    4. Se, por algum motivo, não estiver funcionando, verifique os logs.<br>
